@@ -21,7 +21,7 @@ app.get("/user/:id", (req, res) => {
 app.post("/user", (req, res) => {
   const { userId, fullName, age } = req.body;
   users[userId] = { fullName, age };
-  res.status(201).json({ message: "User created", user: users[userId] });
+  res.status(201).json({ message: "User created TEST", user: users[userId] });
 });
 
 app.patch("/user/:id", (req, res) => {
